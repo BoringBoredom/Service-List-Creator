@@ -19,3 +19,5 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\service3]  
 "Start"=dword:00000004
+
+Place script into same folder as services.txt and run
