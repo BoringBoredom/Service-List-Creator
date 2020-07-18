@@ -4,6 +4,8 @@ with open("services.txt", "r") as f:
     for line in f:
         service_list.append(line.split()[0])
 
+service_list.sort()
+
 with open("services.reg", "w") as f:
     f.write("Windows Registry Editor Version 5.00")
     for service in service_list:
