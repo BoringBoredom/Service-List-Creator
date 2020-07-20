@@ -3,11 +3,17 @@ Script to convert a service list into a registry file
 
 example:
 
+service2	description2  
+service1	description1  
+service3	description3  
+
+will convert into  
+
 service1	description1  
 service2	description2  
 service3	description3  
 
-will convert into
+and  
 
 Windows Registry Editor Version 5.00  
 
