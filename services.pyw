@@ -1,15 +1,23 @@
 import os
 
-full_list = []
 service_list = []
+full_list = []
 
 with open("services.txt", "r") as f:
     for line in f:
-        full_list.append(line)
-        service_list.append(line.split()[0])
+        try:
+            if "\n" in line:
+                service_list.append(line.split()[0])
+                full_list.append(line)
+            else:
+                line = line + "\n"
+                service_list.append(line.split()[0])
+                full_list.append(line)
+        except IndexError:
+            continue
 
-sorted_full_list = sorted(full_list, key=str.casefold)
 sorted_service_list = sorted(service_list, key=str.casefold)
+sorted_full_list = sorted(full_list, key=str.casefold)
 
 os.rename("services.txt", "services_unsorted.txt")
 
