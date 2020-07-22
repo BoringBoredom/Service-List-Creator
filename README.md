@@ -8,9 +8,9 @@ example:
 
 will convert into
 
->service1 description1, additional description1  
->service2 description2, additional description2  
->service3 description3, additional description3  
+>service1 description1, additional description1 etc.  
+>service2 description2, additional description2 etc.  
+>service3 description3, additional description3 etc.  
 
 as .txt file and
 
