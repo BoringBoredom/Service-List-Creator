@@ -1,4 +1,4 @@
-This scripts sorts and converts a service list into a registry file. The service list should be named services.txt and contain one service and optional descriptions per line. The unsorted services.txt will be renamed into services_unsorted.txt and the sorted output will save into services.txt.
+This scripts sorts and converts a service list into a registry file. The service list should be named services.txt and contain one service and optional descriptions per line. The unsorted services.txt will be renamed into services_unsorted.txt and the sorted output will save into services.txt. The amount of whitespaces between a service and its description is irrelevant.
 
 example:
 
