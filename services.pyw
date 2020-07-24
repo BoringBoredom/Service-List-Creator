@@ -26,4 +26,4 @@ with open("services.reg", "w") as f:
     f.write("Windows Registry Editor Version 5.00")
     for service in sorted_service_list:
         if "-" not in service:
-            f.write("\n\n[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\\" + service + "]\n" + "\"Start\"=dword:00000004")
+            f.write("\n\n[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\\" + service + "]\n\"Start\"=dword:00000004")
