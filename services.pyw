@@ -16,8 +16,8 @@ with open("services.txt", "r") as f:
         except IndexError:
             continue
 
-sorted_service_list = sorted(service_list, key= lambda x: (x.strip("-"), x.casefold))
-sorted_full_list = sorted(full_list, key= lambda x: (x.strip("-"), x.casefold))
+sorted_service_list = sorted(service_list, key= lambda x: (x.strip("-").casefold()))
+sorted_full_list = sorted(full_list, key= lambda x: (x.strip("-").casefold()))
 
 os.rename("services.txt", "services_unsorted.txt")
 
