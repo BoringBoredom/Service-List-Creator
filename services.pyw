@@ -6,13 +6,10 @@ full_list = []
 with open("services.txt", "r") as f:
     for line in f:
         try:
-            if "\n" in line:
-                service_list.append(line.split()[0])
-                full_list.append(line)
-            else:
+            service_list.append(line.split()[0])
+            if "\n" not in line:
                 line = line + "\n"
-                service_list.append(line.split()[0])
-                full_list.append(line)
+            full_list.append(line)
         except IndexError:
             continue
 
