@@ -2,7 +2,7 @@ This scripts sorts and converts a service list into a registry file. The service
 
 example:
 
->service4 description4, additional description4 etc.  
+>SERVICE4 description4, additional description4 etc.  
 >service2 description2, additional description2 etc.  
 >service3 description3, additional description3 etc.  
 >-service1 description1, additional description1 etc.  
@@ -12,7 +12,7 @@ will convert into
 >-service1 description1, additional description1 etc.  
 >service2 description2, additional description2 etc.  
 >service3 description3, additional description3 etc.  
->service4 description4, additional description4 etc.  
+>SERVICE4 description4, additional description4 etc.  
 
 as .txt file and
 
@@ -24,7 +24,7 @@ as .txt file and
 >[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\service3]  
 >"Start"=dword:00000004
 >
->[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\service4]  
+>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\SERVICE4]  
 >"Start"=dword:00000004
 
 as .reg file.
