@@ -29,4 +29,4 @@ as .txt file and
 
 as .reg file.
 
-Place the script into the same folder as services.txt and run it.
+Move services.txt to the folder containing this script and run RUN.bat
