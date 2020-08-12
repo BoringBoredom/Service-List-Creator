@@ -1,3 +1,5 @@
+DOWNLOAD: https://github.com/BoringBoredom/servicedisable/archive/master.zip
+
 This scripts sorts and converts a service list into a registry file. The service list should be named services.txt and contain one service and optional descriptions per line. Optionally, services can be filtered out from the final registry file with a "-" prefix. The unsorted services.txt will be renamed to services_unsorted.txt and the sorted output will be saved as services.txt. The amount of whitespaces between a service and its description is irrelevant.
 
 example:
